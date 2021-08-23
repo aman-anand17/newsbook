@@ -1,6 +1,7 @@
 .time {
 	display: flex;
-	width: 100%;
+	width: 99%;
+	border-top: 1px solid rgb(172, 160, 160);
 	justify-content: space-between;
-	border: 2px solid red;
+	padding: 2px 2px;
 }

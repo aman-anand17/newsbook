@@ -1,5 +1,5 @@
 /*
-App 
+app 
 
 
 */
@@ -8,4 +8,6 @@ App
 	display: flex;
 	flex-direction: column;
 	scroll-behavior: smooth;
+	width: 100%;
+	overflow: hidden;
 }
