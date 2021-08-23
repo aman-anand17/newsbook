@@ -1,10 +1,15 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Navbar from "./Navbar.js";
+import Time from "./Time.js";
+import Content from "./Content";
 
 function App() {
   return (
-    <div className="App">
-      <div> <h1> Hello World !</h1></div>
+    <div className="app">
+     <Navbar/>
+     <Time/>
+     <Content/>
     </div>
   );
 }
