@@ -10,7 +10,6 @@ function ArticleList(props) {
                 {
                     props.articles.map((article) => (
                         <ArticleCard article = {article}/>
-                        <h4 key={uuidv4()}>{article.title} </h4>
                     ))
                 }
             </div>
