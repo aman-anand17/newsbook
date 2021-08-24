@@ -1,24 +1,41 @@
+import React from "react";
 import "./Content.css";
-import {useEffect,useState} from 'react';
-import axios from "axios";
+import {getNewsArticles} from './api';
+import ArticleList from "./ArticleList";
 
+class Content extends React.Component{
 
+    state = {
+        articles: [],
+        apiError: "",
+    };
 
-function Content(props) {
-    const[title,setTitle] = useState("");
-    useEffect(()=>{
-        async function hello () {
-            const response = await axios.get("http://api.mediastack.com/v1/news?access_key=26c43a644897e596df126fa6cf3a2114&countries=in")
-            console.log(response.data);
+    async componentDidMount() {
+        try {
+          const response = await getNewsArticles();
+          this.setState({ articles: response.data });
+        } catch (error) {
+          this.setState({ apiError: "Could not find any articles" });
         }
-        /*hello();*/
-    })
-    return(
-        <div className="content">
+      }
 
 
-        </div>
-    )
-    
+       render() {
+
+            const {articles, apiError} = this.state;
+
+            return(
+                <div className="content">
+                     <div className = "articles-container">
+                            <h3>Trending Articles</h3>
+
+                               {articles.length > 0 && <ArticleList articles = {articles} />}
+                               {apiError && <p>Could not fetch any articles. Please try again.</p>}
+
+                     </div>
+                </div>
+            );
+        }
 }
+
 export default Content;
