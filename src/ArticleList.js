@@ -1,4 +1,6 @@
 import React from 'react';
+import ArticleCard from './ArticleCard';
+import './ArticleList.css';
 
 function ArticleList(props) {
     return (
@@ -6,7 +8,7 @@ function ArticleList(props) {
             <div className = "article-title">
                 {
                     props.articles.map((article) => (
-                        <h4>{article.title} </h4>
+                        <ArticleCard article = {article}/>
                     ))
                 }
             </div>

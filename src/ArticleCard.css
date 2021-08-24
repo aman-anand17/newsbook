@@ -1,0 +1,29 @@
+.article-card {
+  
+    background:  whitesmoke;
+    padding: 0;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow-wrap: break-word;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    width: 100%;
+  }
+
+  .article-card .left{
+    flex: 1;
+    height: 300px;
+  }
+  
+  .article-card .left img{
+    height: 300px;
+    width: 250px;
+  }
+  
+  .article-card .right{
+    
+    position: relative;
+    flex: 10;
+  }
