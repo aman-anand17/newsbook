@@ -1,4 +1,5 @@
 import React from 'react';
+import { v4 as uuidv4 } from 'uuid';
 
 function ArticleList(props) {
     return (
@@ -6,7 +7,7 @@ function ArticleList(props) {
             <div className = "article-title">
                 {
                     props.articles.map((article) => (
-                        <h4>{article.title} </h4>
+                        <h4 key={uuidv4()}>{article.title} </h4>
                     ))
                 }
             </div>

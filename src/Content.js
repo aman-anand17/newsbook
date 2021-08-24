@@ -1,5 +1,6 @@
 import React from "react";
 import "./Content.css";
+import Categorybar from "./Categorybar.js";
 import {getNewsArticles} from './api';
 import ArticleList from "./ArticleList";
 
@@ -10,11 +11,12 @@ class Content extends React.Component{
         apiError: "",
     };
 
-    async componentDidMount() {
+   async componentDidMount() {
         try {
           const response = await getNewsArticles();
-          this.setState({ articles: response.data });
-        } catch (error) {
+          this.setState({articles: response.data });
+        } 
+        catch (error) {
           this.setState({ apiError: "Could not find any articles" });
         }
       }
@@ -25,8 +27,13 @@ class Content extends React.Component{
             const {articles, apiError} = this.state;
 
             return(
+              <section className="contentmain">
+                <Categorybar/>
                 <div className="content">
+                 
                      <div className = "articles-container">
+
+                       
                             <h3>Trending Articles</h3>
 
                                {articles.length > 0 && <ArticleList articles = {articles} />}
@@ -34,6 +41,9 @@ class Content extends React.Component{
 
                      </div>
                 </div>
+
+              </section>
+                
             );
         }
 }
