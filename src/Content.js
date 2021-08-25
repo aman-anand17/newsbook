@@ -1,51 +1,35 @@
 import React from "react";
+import General from "./General";
+import Health from "./Health.js";
+import Sports from "./Sports.js";
+import Business from "./Business.js";
+import Entertainment from "./Entertainment.js";
+import Technology from "./Technology.js";
+import Science from "./Science.js";
 import "./Content.css";
 import Categorybar from "./Categorybar.js";
-import {getNewsArticles} from './api';
-import ArticleList from "./ArticleList";
+import {Route,Switch} from "react-router-dom";
 
-class Content extends React.Component{
+  function Content (){
+    return(
+      <section className="contentmain">
+        <Categorybar/>
+        <Switch>
+          <Route exact path='/' component={General} />
+          <Route exact path='/entertainment' component={Entertainment} />
+          <Route exact path='/sports' component={Sports} />
+          <Route exact path='/science' component={Science} />
+          <Route exact path='/health' component={Health} />
+          <Route exact path='/business' component={Business} />
+          <Route exact path='/Technology' component={Technology} />
+        </Switch>
+        
+        
 
-    state = {
-        articles: [],
-        apiError: "",
-    };
+      </section>
+        
+    );
+  }          
 
-   async componentDidMount() {
-        try {
-          const response = await getNewsArticles();
-          this.setState({articles: response.data });
-        } 
-        catch (error) {
-          this.setState({ apiError: "Could not find any articles" });
-        }
-      }
-
-
-       render() {
-
-            const {articles, apiError} = this.state;
-
-            return(
-              <section className="contentmain">
-                <Categorybar/>
-                <div className="content">
-                 
-                     <div className = "articles-container">
-
-                       
-                            <h3>Trending Articles</h3>
-
-                               {articles.length > 0 && <ArticleList articles = {articles} />}
-                               {apiError && <p>Could not fetch any articles. Please try again.</p>}
-
-                     </div>
-                </div>
-
-              </section>
-                
-            );
-        }
-}
 
 export default Content;

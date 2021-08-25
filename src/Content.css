@@ -1,14 +1,5 @@
-/*
-content
-*/
 .contentmain {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-}
-.content {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border: 2px solid black;
 }

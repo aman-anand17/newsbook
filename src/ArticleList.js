@@ -9,7 +9,7 @@ function ArticleList(props) {
             <div className = "article-title">
                 {
                     props.articles.map((article) => (
-                        <ArticleCard article = {article}/>
+                        <ArticleCard key={uuidv4()} article = {article}/>
                     ))
                 }
             </div>
