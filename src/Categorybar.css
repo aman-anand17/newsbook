@@ -1,13 +1,23 @@
 .categorybar {
 	display: flex;
-	flex: 1;
+	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	border-bottom: 2px solid gray;
+	margin:0.5rem auto;
 }
 .categorybar-link {
+	text-align: center;
 	flex-basis: 10%;
 	text-decoration: none;
 	padding: 0.3rem 0.5rem;
+}
+.categorybar-link:hover{
+	border-top:2px solid gray;
+	border-bottom: 2px solid gray;
+
+}
+.categorybar-link-active{
+	border-top:2px solid gray;
+	border-bottom: 2px solid gray;
 }
