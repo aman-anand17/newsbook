@@ -4,7 +4,7 @@ import "./General.css";
 import {getNewsArticles} from './api';
 import ArticleList from "./ArticleList";
 
-class Content extends React.Component{
+class General extends React.Component{
 
     state = {
         articles: [],
@@ -48,4 +48,4 @@ class Content extends React.Component{
         }
 }
 
-export default Content;
+export default General;

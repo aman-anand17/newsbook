@@ -1,5 +1,5 @@
 import React from "react";
-import General from "./General";
+import General from "./General.js";
 import Health from "./Health.js";
 import Sports from "./Sports.js";
 import Business from "./Business.js";

@@ -29,7 +29,7 @@ function Business(props){
                        
                             <h3>Business Articles</h3>
 
-                               {console.log(articles)}
+                            
                                
 
                      </div>
