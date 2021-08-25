@@ -5,7 +5,7 @@ import { NEWS_API_KEY } from "./config";
 import ArticleList from "./ArticleList.js";
 import axios from "axios";
 
-const url = `https://gnews.io/api/v4/top-headlines?token=${NEWS_API_KEY}`;
+const url = `https://gnews.io/api/v4/top-headlines?lang=en&topic=breaking-news&token=${NEWS_API_KEY}`;
 function General(props) {
   const [Articles, setArticles] = useState([]);
   const getData = async () => {

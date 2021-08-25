@@ -3,7 +3,7 @@ import { NEWS_API_KEY } from "./config";
 import ArticleList from "./ArticleList.js";
 import axios from "axios";
 
-const url = `https://gnews.io/api/v4/top-headlines?token=${NEWS_API_KEY}`;
+const url = `https://gnews.io/api/v4/top-headlines?topic=business&lang=en&token=${NEWS_API_KEY}`;
 function Business(props) {
   const [Articles, setArticles] = useState([]);
   /*async function getData() {
