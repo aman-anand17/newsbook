@@ -1,3 +1,3 @@
-/*export const NEWS_API_KEY = "26c43a644897e596df126fa6cf3a2114";
-export const NEWS_API_KEY = '9f2264eaf507e79843d050a5d5c01f53'*/
+// 49cacc541ed4a152d1a723e17cab9825
+
 export const NEWS_API_KEY = "35e1dc2732e19e473c7e4ff12c409687";
