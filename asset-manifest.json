@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/newsbook/static/css/main.522ed7f5.chunk.css",
-    "main.js": "/newsbook/static/js/main.66eee79b.chunk.js",
-    "main.js.map": "/newsbook/static/js/main.66eee79b.chunk.js.map",
+    "main.js": "/newsbook/static/js/main.1a7e98b0.chunk.js",
+    "main.js.map": "/newsbook/static/js/main.1a7e98b0.chunk.js.map",
     "runtime-main.js": "/newsbook/static/js/runtime-main.0e0b60db.js",
     "runtime-main.js.map": "/newsbook/static/js/runtime-main.0e0b60db.js.map",
-    "static/js/2.c84ef5b3.chunk.js": "/newsbook/static/js/2.c84ef5b3.chunk.js",
-    "static/js/2.c84ef5b3.chunk.js.map": "/newsbook/static/js/2.c84ef5b3.chunk.js.map",
+    "static/js/2.7849b706.chunk.js": "/newsbook/static/js/2.7849b706.chunk.js",
+    "static/js/2.7849b706.chunk.js.map": "/newsbook/static/js/2.7849b706.chunk.js.map",
     "index.html": "/newsbook/index.html",
     "static/css/main.522ed7f5.chunk.css.map": "/newsbook/static/css/main.522ed7f5.chunk.css.map",
-    "static/js/2.c84ef5b3.chunk.js.LICENSE.txt": "/newsbook/static/js/2.c84ef5b3.chunk.js.LICENSE.txt"
+    "static/js/2.7849b706.chunk.js.LICENSE.txt": "/newsbook/static/js/2.7849b706.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.0e0b60db.js",
-    "static/js/2.c84ef5b3.chunk.js",
+    "static/js/2.7849b706.chunk.js",
     "static/css/main.522ed7f5.chunk.css",
-    "static/js/main.66eee79b.chunk.js"
+    "static/js/main.1a7e98b0.chunk.js"
   ]
 }
