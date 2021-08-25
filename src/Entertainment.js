@@ -18,7 +18,7 @@ function Entertainment(props){
             }
             getData();
 
-        }
+        },[]
     );
     return(
         <div>

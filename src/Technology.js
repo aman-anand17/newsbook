@@ -18,7 +18,7 @@ function Technology(props){
             }
             getData();
 
-        }
+        },[]
     );
     return(
         <div>

@@ -18,7 +18,7 @@ function Science(props){
             }
             getData();
 
-        }
+        },[]
     );
     return(
         <div>

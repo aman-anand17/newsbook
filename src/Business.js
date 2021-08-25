@@ -1,6 +1,7 @@
 import {useState , useEffect} from "react";
 import Fetchapi from "./Fetchapi.js";
 import { NEWS_API_KEY } from "./config";
+import ArticleCard from "./ArticleCard.js";
 
 const url = `http://api.mediastack.com/v1/news?access_key=${NEWS_API_KEY}&countries=in&languages=en&categories=business`;
 function Business(props){
@@ -18,8 +19,8 @@ function Business(props){
             }
             getData();
 
-        }
-    );
+        },[]
+    )
     return(
 
         <div className="business">
@@ -28,6 +29,10 @@ function Business(props){
 
                        
                             <h3>Business Articles</h3>
+                            {console.log(articles)}
+                            
+                    
+                            
 
                             
                                

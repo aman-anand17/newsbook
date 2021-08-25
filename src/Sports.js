@@ -18,7 +18,7 @@ function Sports(props){
             }
             getData();
 
-        }
+        },[]
     );
     return(
         <div>

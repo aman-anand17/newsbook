@@ -19,7 +19,7 @@ function Health(props){
             }
             getData();
 
-        }
+        },[]
     );
     return(
         <div>
