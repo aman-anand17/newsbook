@@ -3,14 +3,14 @@ import { NEWS_API_KEY } from "./config";
 import ArticleList from "./ArticleList.js";
 import axios from "axios";
 
-const url = `http://api.mediastack.com/v1/news?access_key=${NEWS_API_KEY}&countries=in&languages=en&categories=health`;
+const url = `https://gnews.io/api/v4/top-headlines?token=${NEWS_API_KEY}`;
 
 function Health(props) {
-  const [articles, setArticles] = useState([]);
+  const [Articles, setArticles] = useState([]);
   const getData = async () => {
     return axios
       .get(`${url}`)
-      .then((response) => setArticles(response.data.data));
+      .then((response) => setArticles(response.data.articles));
   };
   useEffect(() => {
     getData();
@@ -18,7 +18,7 @@ function Health(props) {
   return (
     <div>
       Health
-      <ArticleList articles={articles} />
+      <ArticleList articles={Articles} />
     </div>
   );
 }
