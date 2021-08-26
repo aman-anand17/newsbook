@@ -16,7 +16,6 @@ function Technology(props) {
   }, []);
   return (
     <div>
-      Technology
       <ArticleList articles={Articles} />
     </div>
   );

@@ -16,7 +16,6 @@ function Sports(props) {
   }, []);
   return (
     <div>
-      Sports
       <ArticleList articles={Articles} />
     </div>
   );

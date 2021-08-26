@@ -17,7 +17,6 @@ function Science(props) {
 
   return (
     <div>
-      Science
       <ArticleList articles={Articles} />
     </div>
   );

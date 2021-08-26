@@ -29,7 +29,6 @@ function Business(props) {
   return (
     <div className="business">
       <div className="articles-container">
-        <h3>Business Articles</h3>
         <ArticleList articles={Articles} />
 
         {/* {console.log(articles)}

@@ -9,8 +9,7 @@ function Navbar(props){
 
                 </p>
                 <p className="navbar-left-title">
-                    News Book
-
+                    NewsBook
                 </p>
 
             </div>
@@ -23,14 +22,8 @@ function Navbar(props){
                     </p>
 
                     <p className="navbar-right-search-textinput">
-                    
 	                    <input type="search" placeholder="Search..."/>
-
-
                     </p>
-                    
-                    
-
                 </div>
 
             </div>
