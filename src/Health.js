@@ -17,7 +17,6 @@ function Health(props) {
   }, []);
   return (
     <div>
-      Health
       <ArticleList articles={Articles} />
     </div>
   );

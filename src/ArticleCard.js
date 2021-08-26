@@ -3,8 +3,10 @@ import './ArticleCard.css';
 
 function ArticleCard(props) {
     return (
-        <div className = "Article-card">
-         <div className = "article-card">
+        <div className = "article-card" onClick = {() => (
+            window.open(`${props.article.url}`)
+        )}>
+         <div className = "article-card-container">
             <div className = "left">
                 <img alt = "article-poster" src = {props.article.image} />
             </div>
@@ -13,21 +15,29 @@ function ArticleCard(props) {
             <div className = "right">
                 <div className = "title"> {props.article.title} 
                 </div>
+                <div className = "share-options">
+                    <button className = "share-button">Button</button>
+                </div>
+                <div className = "desc"> {props.article.content}</div>
+                <div className = "published-time">
+                    {props.article.publishedAt.slice(0,10)}
+                </div>
 
+                <footer className = "footer">
+
+                <div className= "source">
+                    Source: {props.article.source.name}
+                </div>
+                <button className = "bookmark-button">Bookmark</button>
+               </footer>
                
-                <div className = "category">Category: {props.article.category} </div>
-                
-                <div className = "desc"> {props.article.description}</div>
+            </div>
 
-                <a href = {props.article.url}>
-                    Visit Article
-                </a>
-
-         </div>
-
+      
         </div>
+        
 
-        </div>
+    </div>
     )
 }
 
