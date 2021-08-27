@@ -13,7 +13,7 @@ import {Route,Switch} from "react-router-dom";
   function Content (){
     return(
       <section className="contentmain">
-        <Categorybar/>
+        
         <Switch>
           <Route exact path='/' component={General} />
           <Route exact path='/entertainment' component={Entertainment} />
