@@ -1,0 +1,13 @@
+.copyright-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+    margin-bottom: 24px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+
+.copyright-footer a{
+    text-decoration: none;
+}
