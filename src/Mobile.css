@@ -1,0 +1,28 @@
+.mobile{
+    background-color: white;
+    height:  100vh;     /* Complete visible height */
+    width: 60vw;
+    position: absolute;
+    z-index: 1;
+    right: 0px;
+    top: -6px;
+    padding: 18px 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.close-icon {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 28px;
+    margin-top: 7px;
+}
+.mobile-categorybar{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 24px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}

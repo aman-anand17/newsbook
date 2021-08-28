@@ -12,9 +12,7 @@ function Home() {
         <section id = "navbar">
             <Navbar/>
         </section>
-        <section id = "time">
-            <Time/>
-        </section>
+       
         <section id = "content">
             <Content/>
         </section>
