@@ -1,55 +1,50 @@
 .categorybar {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 .categorybar-link {
-	text-decoration: none;
-	margin-right: 24px;
-	color: #FFFFFF80;
-	font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-	font-size: 17px;
+  text-decoration: none;
+  margin-right: 24px;
+  color: #ffffff80;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 17px;
 }
 
-.categorybar-link:hover{
-	color: #ffffffc7;
+.categorybar-link:hover {
+  color: #ffffffc7;
 }
 
-.categorybar-link-active{
-	color: white;
+.categorybar-link-active {
+  color: white;
 }
 
-.categorybar-link-active:hover{
-	color: white;
+.categorybar-link-active:hover {
+  color: white;
 }
 
-@media  only screen and (max-width: 820px) {
-	
-		.categorybar{
-			flex-direction: column;
-		}
-		.categorybar-link{
-			color: rgba(0, 0, 0, 0.521);
-			margin-bottom: 24px;
-			font-size: 18px;
-			font-family:Verdana, Geneva, Tahoma, sans-serif;
+@media only screen and (max-width: 850px) {
+  .categorybar {
+    flex-direction: column;
+  }
+  .categorybar-link {
+    color: rgba(0, 0, 0, 0.521);
+    margin-bottom: 24px;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
 
-		}
+  .categorybar-link:hover {
+    color: black;
+  }
 
-		.categorybar-link:hover{
-			color: black;
-		}
-		
+  .categorybar-link-active {
+    color: black;
+    font-weight: 600;
+  }
 
-		.categorybar-link-active{
-			color: black;
-			font-weight: 600;
-		}
-
-		.categorybar-link-active:hover{
-			color: rgba(0, 0, 0, 0.808);
-		}
+  .categorybar-link-active:hover {
+    color: rgba(0, 0, 0, 0.808);
+  }
 }
-

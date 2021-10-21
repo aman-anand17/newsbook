@@ -63,6 +63,14 @@ function Categorybar(props) {
       >
         Health
       </NavLink>
+      <NavLink
+        activeClassName="categorybar-link-active"
+        className="categorybar-link"
+        exact
+        to="/searchResults"
+      >
+        Results
+      </NavLink>
     </div>
   );
 }
