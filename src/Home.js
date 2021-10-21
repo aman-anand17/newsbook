@@ -1,36 +1,32 @@
-import React from 'react';
-import './Home.css';
+import React from "react";
+import "./Home.css";
 import Navbar from "./Navbar.js";
 import Time from "./Time.js";
 import Content from "./Content";
-import SearchBar from './SearchBar';
-import Footer from './Footer';
+import SearchBar from "./SearchBar";
+import Footer from "./Footer";
+import Results from "./Results";
 
 function Home() {
-    return (
+  return (
+    <div className="home">
+      <section id="navbar">
+        <Navbar />
+      </section>
 
-        <div className = "home">
+      <section id="search-bar">
+        <Results />
+      </section>
 
-        <section id = "navbar">
-            <Navbar/>
-        </section>
+      <section id="content">
+        <Content />
+      </section>
 
-        
-        <section id = "search-bar">
-            <SearchBar/>
-        </section>
-       
-        <section id = "content">
-            <Content/>
-        </section>
-
-        <section id = "footer">
-             <Footer/>
-        </section>
-
-
-        </div>
-    )
+      <section id="footer">
+        <Footer />
+      </section>
+    </div>
+  );
 }
 
 export default Home;

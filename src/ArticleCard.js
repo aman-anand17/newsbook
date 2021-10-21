@@ -18,13 +18,11 @@ function ArticleCard(props) {
             <button className="share-button">Button</button>
           </div>
           <div className="desc"> {props.article.content}</div>
-          <div className="published-time">
-            {props.article.publishedAt.slice(0, 10)}
-          </div>
-
           <footer className="footer">
             <div className="source">Source: {props.article.source.name}</div>
-            <button className="bookmark-button">Bookmark</button>
+            <div className="published-time">
+              {props.article.publishedAt.slice(0, 10)}
+            </div>
           </footer>
         </div>
       </div>
