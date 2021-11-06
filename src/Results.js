@@ -6,19 +6,8 @@ import axios from "axios";
 import { NavLink } from "react-router-dom";
 
 function Business(props) {
-  const [Articles, setArticles] = useState([]);
-  const [query, setQuery] = useState([]);
   
-
-  const search = async (e) => {
-    return axios
-      .get(`https://gnews.io/api/v4/search?q=${query}&token=${NEWS_API_KEY}`)
-      .then((response) => setArticles(response.data.articles));
-  };
-  useEffect(() => {
-    search();
-  }, []);
-
+  const [query, setQuery] = useState([]);
   return (
     <div className="search-bar">
       <form onSubmit={(e)=>{
@@ -33,9 +22,6 @@ function Business(props) {
         />
         <NavLink to={`/q=${query}`}><button>Search</button></NavLink>
       </form>
-      <div className="search-results">
-        <ArticleList articles={Articles} />
-      </div>
     </div>
   );
 }
