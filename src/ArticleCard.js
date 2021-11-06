@@ -15,7 +15,7 @@ function ArticleCard(props) {
         <div className="right">
           <div className="title"> {props.article.title}</div>
           <div className="share-options">
-            <button className="share-button">Button</button>
+            <button className="share-button">Read More..</button>
           </div>
           <div className="desc"> {props.article.content}</div>
           <footer className="footer">
