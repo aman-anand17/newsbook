@@ -7,6 +7,7 @@ import { NavLink } from "react-router-dom";
 
 function SearchResult(props) {
   const [articles, setArticles] = useState([]);
+  console.log(props);
   const search = async (e) => {
       console.log(props.query)
     return axios
@@ -15,7 +16,7 @@ function SearchResult(props) {
   };
   useEffect(() => {
     search();
-  }, []);
+  }, [props.match.params.query]);
 
   return (
     <div>
