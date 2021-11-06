@@ -8,12 +8,7 @@
 sachin3@gmail.com
 chutiyaSachindra
  */
-const apilist = [
-  "e4046f5543259eccf39d07dd7d1f619f",
-  "8446de8226659e3462db08bd199a7901",
-  "bf4e9d4510cc216f290e9553e8beb714",
-  "b346f297d9012b16270e0fc81d75439a",
-  "474baef58883626f39d5e0fb9c140cb2",
+const apilist = ["9403318cd317a48a92513c72b921098d"
 ];
 let rand_no = Math.floor(Math.random() * apilist.length);
 
