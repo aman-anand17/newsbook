@@ -6,11 +6,12 @@
 /*
 
 sachin3@gmail.com
-chutiyaSachindra
+SachindraChutiya
  */
 const apilist = ["9403318cd317a48a92513c72b921098d",  //yoyo6005
-                    'e74fb6b087856f4d9d7530f0d85bde21', //amananand17012@gmail.com
-                    '670a66f3b0737d7347c11fdce04639b7', // amananand17013@gmail.com
+                    'b661d3e0618798169d3ae4fc9e1cf844', //bbcc
+                    'b661d3e0618798169d3ae4fc9e1cf844' /// 
+    
                     
 ];
 let rand_no = Math.floor(Math.random() * apilist.length);

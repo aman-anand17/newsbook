@@ -4,7 +4,7 @@ import "./Footer.css";
 function Footer() {
   return (
     <div className="copyright-footer">
-      Made with ❤️ by&nbsp;
+      Made by&nbsp;
       <a
         href="https://www.linkedin.com/in/aman-anand-572359191/"
         className="footer-name"
